@@ -1,0 +1,439 @@
+{
+  "reportSettings": {
+    "printTaskURL": "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+    "footnote": "",
+    "logo": "${appPath}/widgets/Screening/images/default-logo.png",
+    "columnTitleColor": "#c6d9ec",
+    "reportTitle": "Screening Report"
+  },
+  "editor": {
+    "layerInfos": [
+      {
+        "featureLayer": {
+          "id": "GWS_4941"
+        },
+        "disableGeometryUpdate": false,
+        "allowUpdateOnly": false,
+        "allowDelete": false,
+        "fieldInfos": [
+          {
+            "fieldName": "SchemeID",
+            "canPresetValue": false,
+            "isEditable": false,
+            "visible": true
+          },
+          {
+            "fieldName": "SchemeName",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "LACode",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Locality",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "PublicSupply",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "NumDom",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "NumMixed",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "NumNonDom",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "EPA_ID",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "LA_ID",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SchemeType",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SchemeManager",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "DBOOM",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SchemeComplete",
+            "canPresetValue": false,
+            "isEditable": false,
+            "visible": false
+          },
+          {
+            "fieldName": "SchemeStructure",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SchemeMap",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "DistrictMeteredAreas",
+            "canPresetValue": false,
+            "isEditable": false,
+            "visible": false
+          },
+          {
+            "fieldName": "IWOwned",
+            "canPresetValue": false,
+            "isEditable": false,
+            "visible": false
+          },
+          {
+            "fieldName": "IWDate",
+            "canPresetValue": false,
+            "isEditable": false,
+            "visible": false
+          }
+        ],
+        "fieldValidations": {}
+      },
+      {
+        "featureLayer": {
+          "id": "GWS_1037"
+        },
+        "disableGeometryUpdate": false,
+        "allowUpdateOnly": false,
+        "allowDelete": false,
+        "fieldInfos": [
+          {
+            "fieldName": "SchemeID",
+            "canPresetValue": false,
+            "isEditable": false,
+            "visible": true
+          },
+          {
+            "fieldName": "AssetName",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "AssetType",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "TreatWater",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "PreFilterScreens",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "CoagulationFlocculation",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "phCorrection",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Clarification",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "DAF",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "NitrateRemoval",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "AmmoniaRemoval",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "RadonTreatment",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "WaterSoftening",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "NoAdditionalTreatment",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Chlorination",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Chloramination",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "ChlorineDioxide",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Ozonation",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "UV",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SansoilDisinfection",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "OtherDisinfectionTreatment",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "NoDisinfection",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "MixedMedia",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "SlowSand",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "RapidGravitySand",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "PressureFiltration",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "RecycledGlass",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "GACFilter",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "MembraneFiltration",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "ParticleFiltration",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "DAFF",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "NoFiltration",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "OtherFiltrationTreatment",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          }
+        ],
+        "fieldValidations": {}
+      },
+      {
+        "featureLayer": {
+          "id": "GWS_3099"
+        },
+        "disableGeometryUpdate": false,
+        "allowUpdateOnly": false,
+        "allowDelete": false,
+        "fieldInfos": [
+          {
+            "fieldName": "SchemeID",
+            "canPresetValue": false,
+            "isEditable": false,
+            "visible": true
+          },
+          {
+            "fieldName": "AbstractionType",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "AbstractionName",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "AbstractionVolume",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "WaterbodyCode",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          }
+        ],
+        "fieldValidations": {}
+      },
+      {
+        "featureLayer": {
+          "id": "GWS_2342"
+        },
+        "disableGeometryUpdate": false,
+        "allowUpdateOnly": false,
+        "allowDelete": false,
+        "fieldInfos": [
+          {
+            "fieldName": "SchemeID",
+            "canPresetValue": false,
+            "isEditable": false,
+            "visible": true
+          }
+        ],
+        "fieldValidations": {}
+      }
+    ],
+    "displayPromptOnSave": false,
+    "displayPromptOnDelete": false,
+    "removeOnSave": false,
+    "useFilterEditor": false,
+    "listenToGF": false,
+    "keepTemplateSelected": false,
+    "schemePointLayer": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/0",
+    "gp_task": "https://staging.housing.gov.ie/arcgis/rest/services/GWS_GP_task/GetSchemeID/GPServer/GetSchemeID",
+    "contact": {
+      "fieldInfos": [
+        {
+          "fieldName": "SchemeID",
+          "isEditable": false,
+          "visible": false
+        },
+        {
+          "fieldName": "contactID",
+          "isEditable": false,
+          "visible": false
+        },
+        {
+          "fieldName": "ContactName",
+          "isEditable": true,
+          "visible": true
+        },
+        {
+          "fieldName": "ObjectID",
+          "isEditable": false,
+          "visible": false
+        }
+      ]
+    },
+    "editDescription": "Select a template to create features"
+  },
+  "schemeTemplate": "{SchemeName} <span class='badge'> {SchemeID}</span>"
+}

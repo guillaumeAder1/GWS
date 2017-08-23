@@ -1,0 +1,38 @@
+{
+    "editor": {
+        "layerInfos": [ ],
+        "displayPromptOnSave": false,
+        "displayPromptOnDelete": false,
+        "removeOnSave": false,
+        "useFilterEditor": false,
+        "listenToGF": false,
+        "keepTemplateSelected": false,
+        "schemePointLayer": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/0",
+        "gp_task": "https://staging.housing.gov.ie/arcgis/rest/services/GWS_GP_task/GetSchemeID/GPServer/GetSchemeID",
+        "contact": {
+            "fieldInfos": [
+                {
+                    "fieldName": "SchemeID",
+                    "isEditable": false,
+                    "visible": false
+                },
+                {
+                    "fieldName": "contactID",
+                    "isEditable": false,
+                    "visible": false
+                },
+                {
+                    "fieldName": "ContactName",
+                    "isEditable": true,
+                    "visible": true
+                },
+                {
+                    "fieldName": "ObjectID",
+                    "isEditable": false,
+                    "visible": false
+                }
+            ]
+        }
+    },
+    "schemeTemplate": "{SchemeName} <span class='badge'> {SchemeID}</span>"
+}

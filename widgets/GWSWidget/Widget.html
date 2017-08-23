@@ -1,0 +1,142 @@
+<div style="width:100%; height:100%; min-width:280px;min-width:240px;">
+    <!--<div class="widgetActive widgetIndicator" id="widgetActiveIndicator" data-dojo-attach-point="widgetActiveIndicator"></div>-->
+
+    <div data-dojo-attach-point="relativeContact"></div>
+
+    <div data-dojo-attach-point="normalAttributInspector"></div>
+
+    <div class="templatePickerMainDiv" data-dojo-attach-point="containerTemplate">
+
+        <!-- Scheme ID Search -->
+        <div class="searchInputGroup">
+            <div data-dojo-attach-point="currentSchemeName" id="currentSchemeName">
+                <label>Current Scheme : </label><span data-dojo-attach-point="selectedSchemeField">None</span>
+            </div>
+            <form data-dojo-attach-point="formNode">
+                <input type="text" tabindex="0" class="searchInput" value="" id="filterSchemeName" role="textbox" placeholder="Search for a Scheme ID">
+            </form>
+        </div>
+
+        <!-- THIS CODE IS BASED ON THE ADD DATA WIDGET -->
+        <!-- dsfghdsj -->
+
+        <div data-dojo-attach-point="tabContainerPanel">
+
+        </div>
+
+        <div data-dojo-attach-point="schemeTab">
+            <!-- display template picker or attribute inspector -->
+
+            <div data-dojo-attach-point="schemePicker"></div>
+
+            <div data-dojo-attach-point="SchemeAttr"></div>
+
+            <div data-dojo-attach-point="SchemeAttr2"></div>
+
+
+
+
+
+
+            <div class="attributeInspectorMainDiv" style="display:none">
+                <div data-dojo-attach-point="editDescription" class="editDescription"></div>
+                <div class="attributeInspectorDiv">
+                    <div class="eeAttributeInspector" data-dojo-attach-point="attributeInspectorNode"></div>
+                </div>
+                <div class="spacer"></div>
+            </div>
+
+        </div>
+
+        <div data-dojo-attach-point="featureTab" id="featureTab">
+            <div data-dojo-attach-point="featurePicker"></div>
+
+            <div data-dojo-attach-point="FeatureAttr"></div>
+
+
+            <!--<div class="attributeInspectorMainDiv" style="display:none">
+                <div data-dojo-attach-point="editDescription" class="editDescription"></div>
+                <div class="attributeInspectorDiv">
+                    <div class="eeAttributeInspector" data-dojo-attach-point="attributeInspectorNode"></div>
+                </div>
+                <div class="spacer"></div>
+            </div>-->
+
+        </div>
+
+        <div data-dojo-attach-point="contactTab" id="contactTab">
+            <div data-dojo-attach-point="contactList"></div>
+        </div>
+
+
+        <!--<table data-dojo-attach-point="controlTable" class="control-table" cellpading="0">
+            <tbody>
+                <tr class="control-table-row" data-dojo-attach-point="tabTr">
+                    <td nowrap="" class="tab-item-td jimu-state-active">
+                        <div class="tab-item-div">Scheme</div>
+                    </td>
+                    <td nowrap="" class="tab-item-td">
+                        <div class="tab-item-div">Features</div>
+                    </td>
+                    <td nowrap="" class="tab-item-td">
+                        <div class="tab-item-div">Contacts</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>-->
+
+        <div class="templatePickerDiv" data-dojo-attach-point="templatePickerDiv">
+
+            <div class="spacer"></div>
+        </div>
+
+
+        <!-- Contacts div -->
+        <div class="contactsDiv" style="display:none">
+            <div class="jimu-btn">New Contact</div>
+            <div data-dojo-attach-point="contactsTitle">
+                <!-- THIS SHOULD BE QUERIED FROM THE CONTACTS TABLE BASED ON THE CURRENT SCHEME ID -->
+                <div class="content-box" data-dojo-attach-point="contentBox">
+                    <div class="title-box ">Exsisting Contacts:</div>
+                    <div class="item record-item oddLine">Contact Name 1</div>
+                    <div class="item record-item evenLine">Contact Name 2</div>
+                    <div class="item record-item oddLine"></div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+        </div>
+
+
+        <div class="presetFieldsTableDiv">
+            <div class="spacer"></div>
+            <div>
+                <input id="savePresetValueSwitch" data-dojo-type="dijit/form/CheckBox" data-dojo-attach-event="change:_setPresetValue" />
+                <label for="savePresetValueSwitch">${nls.usePresetValues}</label>
+            </div>
+            <div class="spacer"></div>
+            <div class="presetFieldsTable" data-dojo-attach-point="presetFieldsTableNode"></div>
+            <div class="spacer"></div>
+        </div>
+
+    </div>
+
+    <!--Clear scheme selection-->
+    <div data-dojo-attach-point="clearSchemeSelectionBtn" class="jimu-btn jimu-state-disabled noevent">
+        Clear Scheme selection
+    </div>
+
+
+    <!-- Registration Complete -->
+    <div data-dojo-attach-point="registrationWidget"></div>
+    <!--<div data-dojo-attach-point="registrationDomnode" class="marge">
+        <input data-dojo-attach-point="registrationComplete" id="mycheck1" name="mycheck1" data-dojo-type="dijit/form/CheckBox" value="agreed" checked />
+        <label for="mycheck1">Registration completed ?</label>
+    </div>-->
+
+    <div data-dojo-attach-point="shelter" data-dojo-type="jimu/dijit/LoadingShelter" data-dojo-props='hidden:true'></div>
+
+
+
+    <div data-dojo-attach-point="reportWidget" class="jimu-btn">Report</div>
+</div>

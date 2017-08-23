@@ -1,0 +1,51 @@
+{
+  "allPlaceholder": "Address, Scheme Name/ID",
+  "showInfoWindowOnSelect": true,
+  "sources": [
+    {
+      "url": "https://tasks.housing.gov.ie/arcgis/rest/services/Locator/EircodeLocator/GeocodeServer",
+      "name": "Eircode Locator",
+      "singleLineFieldName": "SingleLine",
+      "placeholder": "Search a Eircode",
+      "countryCode": "",
+      "zoomScale": 50000,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "searchInCurrentMapExtent": false,
+      "enableLocalSearch": false,
+      "localSearchMinScale": 300000,
+      "localSearchDistance": 50000,
+      "type": "locator"
+    },
+    {
+      "layerId": "GWS_4941",
+      "url": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/0",
+      "name": "Scheme Name",
+      "placeholder": "Search a Scheme name",
+      "searchFields": [],
+      "displayField": "SchemeName",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "zoomScale": 50000,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "type": "query"
+    },
+    {
+      "layerId": "GWS_4941",
+      "url": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/0",
+      "name": "Scheme ID",
+      "placeholder": "Search a Scheme ID",
+      "searchFields": [
+        "SchemeID"
+      ],
+      "displayField": "SchemeName",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "zoomScale": 50000,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "type": "query"
+    }
+  ]
+}

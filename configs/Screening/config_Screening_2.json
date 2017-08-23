@@ -1,0 +1,685 @@
+{
+  "aoiTabText": "AOI",
+  "reportTabText": "Report",
+  "placenameButtonText": "Placename",
+  "drawToolsButtonText": "Draw",
+  "shapefileButtonText": "Shapefile",
+  "coordinatesButtonText": "Coordinates",
+  "showPlacenameWidget": true,
+  "showDrawToolsWidget": true,
+  "showShapefileWidget": false,
+  "showCoordinatesWidget": false,
+  "allowShapefilesUpload": false,
+  "areaUnits": "Standard",
+  "maxFeaturesForAnalysis": 1000,
+  "searchTolerance": 20,
+  "traverseUnit": "uSSurveyFeet",
+  "traverseDirectionUnit": "decimalDegree",
+  "defaultBufferDistance": 0,
+  "defaultBufferUnit": "UNIT_STATUTE_MILE",
+  "reportSettings": {
+    "printTaskURL": "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+    "footnote": "",
+    "logo": "${appPath}/widgets/Screening/images/default-logo.png",
+    "columnTitleColor": "#c6d9ec",
+    "reportTitle": "Screening Report"
+  },
+  "searchSourceSettings": {
+    "allPlaceholder": "",
+    "showInfoWindowOnSelect": true,
+    "sources": [
+      {
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+        "name": "Esri World Geocoder",
+        "singleLineFieldName": "SingleLine",
+        "placeholder": "Esri World Geocoder",
+        "countryCode": "",
+        "zoomScale": 50000,
+        "maxSuggestions": 6,
+        "maxResults": 6,
+        "searchInCurrentMapExtent": false,
+        "enableLocalSearch": true,
+        "localSearchMinScale": 300000,
+        "localSearchDistance": 50000,
+        "type": "locator"
+      }
+    ]
+  },
+  "placenameSymbology": {
+    "point": {
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriPMS",
+      "url": null,
+      "imageData": "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",
+      "contentType": "image/png",
+      "width": 24.99975,
+      "height": 24.99975
+    },
+    "polyline": {
+      "color": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "width": 4,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "polygon": {
+      "color": [
+        136,
+        136,
+        136,
+        63
+      ],
+      "outline": {
+        "color": [
+          112,
+          112,
+          112,
+          255
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    },
+    "aoiSymbol": {
+      "color": [
+        255,
+        255,
+        255,
+        0
+      ],
+      "outline": {
+        "color": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "width": 1.5,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "drawToolSymbology": {
+    "point": {
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriPMS",
+      "url": null,
+      "imageData": "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",
+      "contentType": "image/png",
+      "width": 24.99975,
+      "height": 24.99975
+    },
+    "polyline": {
+      "color": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "width": 4,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "polygon": {
+      "color": [
+        136,
+        136,
+        136,
+        63
+      ],
+      "outline": {
+        "color": [
+          112,
+          112,
+          112,
+          255
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    },
+    "aoiSymbol": {
+      "color": [
+        255,
+        255,
+        255,
+        0
+      ],
+      "outline": {
+        "color": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "width": 1.5,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "shapefileSymbology": {
+    "point": {
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriPMS",
+      "url": null,
+      "imageData": "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",
+      "contentType": "image/png",
+      "width": 24.99975,
+      "height": 24.99975
+    },
+    "polyline": {
+      "color": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "width": 4,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "polygon": {
+      "color": [
+        136,
+        136,
+        136,
+        63
+      ],
+      "outline": {
+        "color": [
+          112,
+          112,
+          112,
+          255
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    },
+    "aoiSymbol": {
+      "color": [
+        255,
+        255,
+        255,
+        0
+      ],
+      "outline": {
+        "color": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "width": 1.5,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "coordinatesSymbology": {
+    "point": {
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriPMS",
+      "url": null,
+      "imageData": "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",
+      "contentType": "image/png",
+      "width": 24.99975,
+      "height": 24.99975
+    },
+    "polyline": {
+      "color": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "width": 4,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "polygon": {
+      "color": [
+        136,
+        136,
+        136,
+        63
+      ],
+      "outline": {
+        "color": [
+          112,
+          112,
+          112,
+          255
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    },
+    "aoiSymbol": {
+      "color": [
+        255,
+        255,
+        255,
+        0
+      ],
+      "outline": {
+        "color": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "width": 1.5,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "aoiSymbol": {
+    "color": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "outline": {
+      "color": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "width": 1.5,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "type": "esriSFS",
+    "style": "esriSFSSolid"
+  },
+  "layers": [
+    {
+      "url": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/0",
+      "geometryType": "esriGeometryPoint",
+      "id": "GWS_4941",
+      "label": "",
+      "layerName": "GWS - Scheme",
+      "layerVersion": 10.41,
+      "selectedFields": {
+        "SchemeID": {
+          "name": "SchemeID",
+          "type": "esriFieldTypeInteger",
+          "alias": "Scheme ID",
+          "editable": true,
+          "nullable": true,
+          "label": ""
+        },
+        "SchemeName": {
+          "name": "SchemeName",
+          "type": "esriFieldTypeString",
+          "alias": "Scheme Name",
+          "length": 500,
+          "editable": true,
+          "nullable": false,
+          "label": ""
+        },
+        "LACode": {
+          "name": "LACode",
+          "type": "esriFieldTypeString",
+          "alias": "Responsible Local Authority",
+          "length": 50,
+          "editable": true,
+          "nullable": false,
+          "domain": {
+            "name": "LACode",
+            "type": "codedValue",
+            "codedValues": [
+              {
+                "name": "Carlow County Council",
+                "code": "CW"
+              },
+              {
+                "name": "Cavan County Council",
+                "code": "CN"
+              },
+              {
+                "name": "Clare County Council",
+                "code": "CE"
+              },
+              {
+                "name": "Cork City Council",
+                "code": "CC"
+              },
+              {
+                "name": "Cork County Council",
+                "code": "CK"
+              },
+              {
+                "name": "Dun Laoghaire Rathdown County Council",
+                "code": "DR"
+              },
+              {
+                "name": "Donegal County Council",
+                "code": "DL"
+              },
+              {
+                "name": "Dublin City Council",
+                "code": "DC"
+              },
+              {
+                "name": "Fingal County Council",
+                "code": "FG"
+              },
+              {
+                "name": "Galway City Council",
+                "code": "GC"
+              },
+              {
+                "name": "Galway County Council",
+                "code": "GY"
+              },
+              {
+                "name": "Kildare County Council",
+                "code": "KE"
+              },
+              {
+                "name": "Kilkenny County Council",
+                "code": "KK"
+              },
+              {
+                "name": "Kerry County Council",
+                "code": "KY"
+              },
+              {
+                "name": "Longford County Council",
+                "code": "LD"
+              },
+              {
+                "name": "Louth County Council",
+                "code": "LH"
+              },
+              {
+                "name": "Limerick County Council",
+                "code": "LK"
+              },
+              {
+                "name": "Leitrim County Council",
+                "code": "LM"
+              },
+              {
+                "name": "Laois County Council",
+                "code": "LS"
+              },
+              {
+                "name": "Meath County Council",
+                "code": "MH"
+              },
+              {
+                "name": "Monaghan County Council",
+                "code": "MN"
+              },
+              {
+                "name": "Mayo County Council",
+                "code": "MO"
+              },
+              {
+                "name": "Offaly County Council",
+                "code": "OY"
+              },
+              {
+                "name": "Roscommon County Council",
+                "code": "RN"
+              },
+              {
+                "name": "South Dublin County Council",
+                "code": "SD"
+              },
+              {
+                "name": "Sligo County Council",
+                "code": "SO"
+              },
+              {
+                "name": "Tipperary County Council",
+                "code": "TY"
+              },
+              {
+                "name": "Waterford County Council",
+                "code": "WD"
+              },
+              {
+                "name": "Westmeath County Council",
+                "code": "WH"
+              },
+              {
+                "name": "Wicklow County Council",
+                "code": "WW"
+              },
+              {
+                "name": "Wexford County Council",
+                "code": "WX"
+              }
+            ]
+          },
+          "label": ""
+        },
+        "Locality": {
+          "name": "Locality",
+          "type": "esriFieldTypeString",
+          "alias": "Scheme Locality",
+          "length": 500,
+          "editable": true,
+          "nullable": false,
+          "label": ""
+        }
+      },
+      "layerId": "0",
+      "baseURL": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/"
+    },
+    {
+      "url": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/2",
+      "geometryType": "esriGeometryPoint",
+      "id": "GWS_1037",
+      "label": "",
+      "layerName": "GWS - Asset",
+      "layerVersion": 10.41,
+      "selectedFields": {
+        "AssetName": {
+          "name": "AssetName",
+          "type": "esriFieldTypeString",
+          "alias": "Asset Name",
+          "length": 500,
+          "editable": true,
+          "nullable": false,
+          "label": ""
+        },
+        "SchemeID": {
+          "name": "SchemeID",
+          "type": "esriFieldTypeInteger",
+          "alias": "Scheme ID",
+          "editable": true,
+          "nullable": true,
+          "label": ""
+        }
+      },
+      "layerId": "2",
+      "baseURL": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/"
+    },
+    {
+      "url": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/1",
+      "geometryType": "esriGeometryPoint",
+      "id": "GWS_3099",
+      "label": "",
+      "layerName": "GWS - Source",
+      "layerVersion": 10.41,
+      "selectedFields": {
+        "AbstractionType": {
+          "name": "AbstractionType",
+          "type": "esriFieldTypeInteger",
+          "alias": "Source Type",
+          "editable": true,
+          "nullable": false,
+          "domain": {
+            "name": "AbstractionType",
+            "type": "codedValue",
+            "codedValues": [
+              {
+                "name": "Ground-Borehole",
+                "code": 1
+              },
+              {
+                "name": "Ground-Well",
+                "code": 2
+              },
+              {
+                "name": "Ground-Spring",
+                "code": 3
+              },
+              {
+                "name": "Surface-Lake",
+                "code": 4
+              },
+              {
+                "name": "Surface-River",
+                "code": 5
+              },
+              {
+                "name": "Surface-Stream",
+                "code": 6
+              },
+              {
+                "name": "Rainwater",
+                "code": 7
+              },
+              {
+                "name": "Irish Water Source",
+                "code": 8
+              },
+              {
+                "name": "GWS has no information on source",
+                "code": 9
+              }
+            ]
+          },
+          "label": ""
+        },
+        "AbstractionName": {
+          "name": "AbstractionName",
+          "type": "esriFieldTypeString",
+          "alias": "Source Name",
+          "length": 500,
+          "editable": true,
+          "nullable": false,
+          "label": ""
+        },
+        "SchemeID": {
+          "name": "SchemeID",
+          "type": "esriFieldTypeInteger",
+          "alias": "Scheme ID",
+          "editable": true,
+          "nullable": true,
+          "label": ""
+        }
+      },
+      "layerId": "1",
+      "baseURL": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/"
+    },
+    {
+      "url": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/3",
+      "geometryType": "esriGeometryPolygon",
+      "id": "GWS_2342",
+      "label": "",
+      "layerName": "GWS - Area",
+      "layerVersion": 10.41,
+      "selectedFields": {
+        "SchemeID": {
+          "name": "SchemeID",
+          "type": "esriFieldTypeInteger",
+          "alias": "Scheme ID",
+          "editable": true,
+          "nullable": true,
+          "label": ""
+        }
+      },
+      "layerId": "3",
+      "baseURL": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/"
+    }
+  ],
+  "downloadSettings": {
+    "type": "syncEnable",
+    "layers": [
+      {
+        "url": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/0",
+        "layerName": "GWS - Scheme",
+        "id": "GWS_4941",
+        "allowDownload": true,
+        "downloadingFileOption": [
+          "csv"
+        ]
+      },
+      {
+        "url": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/2",
+        "layerName": "GWS - Asset",
+        "id": "GWS_1037",
+        "allowDownload": true,
+        "downloadingFileOption": [
+          "csv"
+        ]
+      },
+      {
+        "url": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/1",
+        "layerName": "GWS - Source",
+        "id": "GWS_3099",
+        "allowDownload": true,
+        "downloadingFileOption": [
+          "csv"
+        ]
+      },
+      {
+        "url": "https://staging.housing.gov.ie/arcgis/rest/services/GWS/GWS/FeatureServer/3",
+        "layerName": "GWS - Area",
+        "id": "GWS_2342",
+        "allowDownload": true,
+        "downloadingFileOption": [
+          "csv"
+        ]
+      }
+    ],
+    "extractDataTaskURL": "",
+    "downloadingFileOptions": [
+      "csv"
+    ]
+  }
+}
